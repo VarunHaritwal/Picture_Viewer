@@ -1,0 +1,7 @@
+<h1>{{ question_list.group_name }}</h1>
+<ul>
+{% for choice in question_list.question_set.all %}
+    <img src='{{ choice.image.url }}' class="img-fluid" alt="Responsive image"/>
+    <li>{{ choice.comment }}</li>
+{% endfor %}
+</ul>

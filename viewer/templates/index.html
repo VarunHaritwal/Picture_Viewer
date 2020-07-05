@@ -1,0 +1,9 @@
+{% if group_list %}
+    <ul>
+    {% for item in group_list %}
+        <li><a href="{{ item.id }}">{{ item.group_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No questions are available.</p>
+{% endif %}
